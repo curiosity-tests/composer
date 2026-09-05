@@ -91,14 +91,6 @@ jobs:
             dependencies: highest
             os: ubuntu-latest
             experimental: false
-          - php-version: "8.5"
-            os: windows-latest
-            dependencies: locked
-            experimental: false
-          - php-version: "8.5"
-            os: macos-latest
-            dependencies: locked
-            experimental: false
           - php-version: "8.6"
             dependencies: lowest-ignore
             os: ubuntu-latest
