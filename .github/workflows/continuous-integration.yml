@@ -47,7 +47,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  CHALK_ON: ${{ github.event_name == 'workflow_dispatch' && inputs.leg != 'baseline' }}
+  CHALK_ON: ${{ inputs.leg == 'instrumented' }}
   COMPOSER_FLAGS: "--ansi --no-interaction --no-progress --prefer-dist"
   COMPOSER_UPDATE_FLAGS: ""
 
